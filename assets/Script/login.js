@@ -26,7 +26,7 @@ function quandoSucessoLogin(response) {
  var token = response.data;
  var elementoLogin = document.querySelector(".login");
  elementoLogin.style.display = "none";  
- var elementoLogin = document.querySelector(".lista");
+ var elementoLogin = document.querySelector(".listaQuizzes");
  elementoLogin.style.display = "block";  
 }
 

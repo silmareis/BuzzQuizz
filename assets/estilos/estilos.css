@@ -74,11 +74,72 @@ h2 {
 
 /**--------------------LISTA QUIZZES-------------------*/
 
-.lista {
-    height: 100px;
-    width: 50%;
-    background: red;
+
+.listaQuizzes {
     display: none;
+}
+
+.topo {
+    height: 60px;
+    width: 100%;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+.container-lista {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 25%;
+}
+
+.adicionaQuiz {
+    background: #7EA6D4;
+    width: 20%;
+    height: 200px;
+    box-shadow: 2px 2px rgba(0,0,0,0.1);
+    border-radius: 5%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+.Text-primeiroCard {
+    font-size: 25px;
+}
+
+.novoQuiz {
+    background: white;
+    width: 20%;
+    height: 200px;
+    border: 2px solid rgba(0,0,0,0.1);
+    box-shadow: 2px 2px rgba(0,0,0,0.1);
+    margin: 10px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.texto-cards {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    margin-top: 1px;;
 }
 
 
@@ -99,4 +160,20 @@ h2 {
     .container-login {
         width: 100%;   
     }
+
+    /**--------------------LISTA QUIZZES-------------------*/  
+
+    .container-lista {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .adicionaQuiz {
+        width: 60%;
+    }
+
+    .novoQuiz {
+        width: 60%;
+    }
+
 }
