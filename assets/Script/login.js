@@ -8,7 +8,7 @@ if (email === "" || senha ==="") {
 }
 
 else {
-    //var desabilitar = document.querySelector("button").disabled
+    document.querySelector(".entrar-login").disabled = true;
 
 var dados = {
     
@@ -23,8 +23,11 @@ var dados = {
 
 
 function quandoSucessoLogin(response) {
- var token = response.data
- console.log(token);
+ var token = response.data;
+ var elementoLogin = document.querySelector(".login");
+ elementoLogin.style.display = "none";  
+ var elementoLogin = document.querySelector(".lista");
+ elementoLogin.style.display = "block";  
 }
 
 function quandoErroLogin(erro) {
