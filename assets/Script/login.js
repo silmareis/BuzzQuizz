@@ -1,5 +1,7 @@
 
+var token = []
 function entrarLogin() {
+
 var email = document.querySelector(".input-email").value;
 var senha = document.querySelector(".input-senha").value;   
 
@@ -23,13 +25,17 @@ var dados = {
 
 
 function quandoSucessoLogin(response) {
- var token = response.data;
+ token = response.data.token;
  var elementoLogin = document.querySelector(".login");
  elementoLogin.style.display = "none";  
+
  var elementoLogin = document.querySelector(".listaQuizzes");
- elementoLogin.style.display = "block";  
+ elementoLogin.style.display = "block";
+ listaQuizzes(); 
 }
 
 function quandoErroLogin(erro) {
 alert ("E-mail e senha incorretos")
+document.querySelector(".entrar-login").disabled = false;
 }
+
