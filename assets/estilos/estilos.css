@@ -25,10 +25,10 @@ body {
 /**--------------------LOGIN-------------------*/
 
 .login {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
 }
 
 h1 {
@@ -55,12 +55,14 @@ h2 {
     height: 60px;
     margin-bottom: 10px;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 .input-senha {
     width: 100%;
     height: 60px;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 .entrar-login {
@@ -149,6 +151,128 @@ h3 {
 .criarQuizz {
     display: none;
 }
+
+.container-novoQuizz {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 30%;
+}
+
+.titulo-Quizz {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.pergunta-Quizz {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #E3F0FF;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.replicar {
+    font-size: 50px;
+    margin-bottom: 60px;
+    color: #6C8FB8;
+}
+
+.nivel-Quizz {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #E3F0FF;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.publicar {
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+}
+
+.numeroPergunta {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.texto-input {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #DDDDDD;
+}
+
+.digita-pergunta {
+    background: white;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.container-resposta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.respostas {
+    width: 49.8%;
+    margin-bottom: 2px;
+}
+
+.linkimagens {
+    width: 49.8%;
+    margin-bottom: 2px;
+}
+
+.resposta-correta {
+    background: rgba(94, 226, 94, 0.5);
+    width: 100%;
+}
+
+.resposta-incorreta {
+    width: 100%;
+    background: rgba(236, 59, 59, 0.5);
+}
+
+.numeroNivel {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.qtdAcertos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-nivel {
+    background: white;
+    width: 49.8%;
+    margin-bottom: 2px
+}
+
+.dados-nivel {
+    background: white;
+    width: 100%;
+    margin-bottom: 2px
+}
+
+.descricao {
+    padding-bottom: 60px;
+    overflow: scroll;
+}
+
 /**--------------------MOBILE-------------------*/
 
 
