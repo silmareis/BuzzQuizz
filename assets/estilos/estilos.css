@@ -1,16 +1,102 @@
 
 
-/* .texto {
+
+/**--------------------GERAL---------------------*/
+
+body {
+    background: white;
+}
+
+ .texto-serif {
+
+    font-family: 'Merriweather', serif;
+}
+
+.texto-sans-serif {
 
     font-family: 'Roboto', sans-serif;
-} */
+}
+
+.estilo-background {
+    background: #6C8FB8;
+}
 
 
-/**--------------------TOPO-------------*/
+/**--------------------LOGIN-------------------*/
+
+.login {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 80px;
+}
+
+h1 {
+    font-size: 60px;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    color: rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+}
+
+.container-login {
+    width: 27%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.input-email {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.input-senha {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+}
+
+.entrar-login {
+    width: 50%;
+    height: 60px;
+    margin-top: 20px;
+    background: #39385A;
+    color: white;
+    font-size: 20px;
+}
+
+/**--------------------LISTA QUIZZES-------------------*/
+
+.lista {
+    height: 100px;
+    width: 50%;
+    background: red;
+    display: none;
+}
 
 
-/**--------------------CONTEUDO-------------*/
+/**--------------------MOBILE-------------------*/
 
 
 
-/**--------------------FUNDO-------------*/
+
+@media (max-width: 600px) {
+
+  /**--------------------LOGIN-------------------*/  
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }  
+    .container-login {
+        width: 100%;   
+    }
+}

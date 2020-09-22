@@ -4,36 +4,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Chat UOL</title>
+  <title>BuzzQuizz</title>
   <link href="assets/estilos/reset.css" rel="stylesheet" type="text/css" />
   <link href="assets/estilos/estilos.css" rel="stylesheet" type="text/css" />
 
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <!-------------------TOP0----------------->
 
-  <header>
-  </header>
-
-  <!-----------------CONTEUDO---------------->
   <main>
-    <section>
+  <!-----------------LOGIN---------------->
+
+    <section class="login">
+      <h1 class="texto-sans-serif"> BuzzQuizz </h1>
+      <h2 class="texto-sans-serif"> O Quiz que voce Quizzer </h2>
+      <div class="container-login estilo-background">
+        <input type="email" class="input-email" placeholder="  E-mail" class="texto-sans-serif">
+        <input type="password" class="input-senha" placeholder="  Senha" class="texto-sans-serif">
+        <button class="entrar-login" onclick="entrarLogin()">Entrar</button>
+      </div>
     </section>
+
+    <section class="listaQuizzes">
+      <div class="lista"></div>
+    </section>
+
+  <!-----------------LOGIN---------------->
+
   </main>
 
-  <!------------------FUNDO------------------>
-
-  <footer>
-  </footer>
+ 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-  <script src="assets/scripts/script.js"></script>
+  <script src="assets/Script/login.js"></script>
 </body>
 
 </html>
