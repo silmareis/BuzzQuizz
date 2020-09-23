@@ -55,6 +55,7 @@
 
   <div class="container-novoQuizz">
     <input type="text" class="titulo-Quizz texto-sans-serif" placeholder="Digite o titulo do seu quizz">
+    <div class="conteiner-perguntas">
     <div class="pergunta-Quizz">
         <p class="numeroPergunta"> Pergunta 1</p>
         <input  class="digita-pergunta texto-input" placeholder="Digite a sua pergunta">
@@ -72,11 +73,12 @@
             <input  class="resposta-incorreta texto-input" placeholder="Link para a imagem incorreta 2">
             <input  class="resposta-incorreta texto-input" placeholder="Link para a imagem incorreta 3">
          </div>
-          
         </div>
-
     </div>
-    <ion-icon name="add-circle" class="replicar" ></ion-icon>
+
+  </div>
+    <ion-icon name="add-circle" class="replicar" onclick="criarPergunta()" ></ion-icon>
+    <div class="conteiner-niveis">
     <div class="nivel-Quizz">
       <p class="numeroNivel"> Nivel 1</p>
       <div class="qtdAcertos">
@@ -88,7 +90,8 @@
       <input   class="dados-nivel texto-input descricao" placeholder="Descricao do nivel">
 
     </div>
-    <ion-icon name="add-circle" class="replicar" ></ion-icon>
+    </div>
+    <ion-icon name="add-circle" class="replicar" onclick="criarNivel()" ></ion-icon>
 
     <button class="publicar estilo-background">PUBLICAR</button>
   </div>
