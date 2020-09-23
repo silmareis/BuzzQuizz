@@ -306,4 +306,11 @@ h3 {
         width: 60%;
     }
 
+    /**--------------------CRIAR QUIZZES-------------------*/  
+    
+    .container-novoQuizz {
+        width: 90%;
+        margin-left: 5%;
+    }
+
 }
