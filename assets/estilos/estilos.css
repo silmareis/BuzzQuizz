@@ -278,6 +278,71 @@ h3 {
     overflow: scroll;
 }
 
+/**--------------------INTERFACE QUIZZ-------------------*/
+
+
+.interfaceQuizz {
+    display: none;
+}
+
+
+.container-questao {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-left: 25%;
+}
+
+.titulo-quizz-questao {
+    font-size: 50px;
+    color: black;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.questao {
+    width: 100%;
+}
+
+.titulo-questao {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container-opcao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.opcao {
+    width: 49.6%;
+    margin-bottom: 10px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.opcao-imagem {
+    width: 100%;
+    height: 210px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.texto-opcao {
+    padding: 10px 10px 25px 10px;
+    color: rgba(0, 0, 0, 0.603);
+    font-size: 20px ;
+}
+
 /**--------------------MOBILE-------------------*/
 
 
@@ -316,6 +381,18 @@ h3 {
     .container-novoQuizz {
         width: 90%;
         margin-left: 5%;
+
+    }
+/**--------------------INTERFACE QUIZZ-------------------*/
+    .container-questao {
+        width: 90%;
+        margin-left: 5%;
     }
 
+    .titulo-quizz-questao {
+        font-size: 30px;
+    }
+
+    .opcao {
+        width: 100%;
 }
