@@ -122,6 +122,11 @@ h3 {
     font-size: 25px;
 }
 
+.container-lisa-novoQuizz {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .novoQuiz {
     background: white;
     width: 20%;
