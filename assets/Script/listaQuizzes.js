@@ -1,6 +1,6 @@
 function listaQuizzes(response) {
 
-  var requisicao = axios.get('https://mock-api.bootcamp.respondeai.com.br/api/v1/buzzquizz/quizzes', {headers: {"User-Token": token}})
+  var requisicao = axios.get('https://mock-api.bootcamp.respondeai.com.br/api/v1/buzzquizz/quizzes', config)
   requisicao.then(quandoSucessoLista).catch(quandoErroLista);
 }
  

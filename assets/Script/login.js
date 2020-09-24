@@ -1,5 +1,6 @@
 
-var token = []
+var config = { headers: {}};
+
 function entrarLogin() {
 
 var email = document.querySelector(".input-email").value;
@@ -25,7 +26,7 @@ var dados = {
 
 
 function quandoSucessoLogin(response) {
- token = response.data.token;
+ config.headers['User-Token'] = response.data.token;
  var elementoLogin = document.querySelector(".login");
  elementoLogin.style.display = "none";  
 
