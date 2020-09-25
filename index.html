@@ -17,7 +17,7 @@
 <body>
 
   <main>
-  <!-----------------LOGIN---------------->
+    <!-----------------LOGIN---------------->
 
     <section class="login">
       <h1 class="texto-sans-serif"> BuzzQuizz </h1>
@@ -29,50 +29,50 @@
       </div>
     </section>
 
-  <!-----------------LISTA DE QUIZZ---------------->
-    
-  <section class="listaQuizzes">
-    <div class="topo estilo-background">
-      <h3 class="texto-sans-serif"> BuzzQuizz</h3>
-    </div>
-    <div class="container-lista">
+    <!-----------------LISTA DE QUIZZ---------------->
+
+    <section class="listaQuizzes">
+      <div class="topo estilo-background">
+        <h3 class="texto-sans-serif"> BuzzQuizz</h3>
+      </div>
+      <div class="container-lista">
         <div class="adicionaQuiz"></div>
         <div class="container-lisa-novoQuizz"></div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-----------------CRIAR UM QUIZZ---------------->
+    <!-----------------CRIAR UM QUIZZ---------------->
 
- <section class="criarQuizz">
-  <div class="topo estilo-background">
-    <h3 class="texto-sans-serif"> BuzzQuizz</h3>
-  </div>
+    <section class="criarQuizz">
+      <div class="topo estilo-background">
+        <h3 class="texto-sans-serif"> BuzzQuizz</h3>
+      </div>
 
-  <div class="container-novoQuizz">
-    <input type="text" class="titulo-Quizz texto-sans-serif" placeholder="Digite o titulo do seu quizz">
-    <div class="conteiner-perguntas">
+      <div class="container-novoQuizz">
+        <input type="text" class="titulo-Quizz texto-sans-serif" placeholder="Digite o titulo do seu quizz">
 
-  </div>
-    <ion-icon name="add-circle" class="replicar" onclick="criarPergunta()" ></ion-icon>
-    <div class="conteiner-niveis">
-    
-    </div>
-    <ion-icon name="add-circle" class="replicar" onclick="criarNivel()" ></ion-icon>
+        <div class="conteiner-perguntas">
+        </div>
+        <ion-icon name="add-circle" class="replicar" onclick="criarPergunta()"></ion-icon>
+        <div class="conteiner-niveis">
+        </div>
+        <ion-icon name="add-circle" class="replicar" onclick="criarNivel()"></ion-icon>
 
-    <button class="publicar estilo-background" onclick="processarQuizz()">PUBLICAR</button>
-  </div>
- </section>
+        <button class="publicar estilo-background" onclick="processarQuizz()">PUBLICAR</button>
+      </div>
+    </section>
 
 
-   <!-----------------INTERFACE QUIZZ---------------->
+    <!-----------------INTERFACE QUIZZ---------------->
 
-   <section class="interfaceQuizz">
+    <section class="interfaceQuizz">
 
-    <div class="topo estilo-background">
-      <h3 class="texto-sans-serif"> BuzzQuizz</h3>
+      <div class="topo estilo-background">
+        <h3 class="texto-sans-serif"> BuzzQuizz</h3>
+      </div>
 
-    <div class="container-questao">
-      <h4 class="titulo-quizz-questao texto-serif"> O quao PotterHead voce e?</h4>
+      <div class="container-questao">
+        <h4 class="titulo-quizz-questao texto-serif"> O quao PotterHead voce e?</h4>
         <div class="questao">
           <h3 class="titulo-questao estilo-background"> Em qual animal Moody transfigurou Malfoy? </h3>
           <div class="container-opcao">
@@ -80,7 +80,7 @@
               <img src="" alt="" class="opcao-imagem">
               <h3 class="texto-sans-serif texto-opcao">Gato</h3>
             </div>
-            <div class="opcao">
+            <div class="opcao" onclick="resultado()">
               <img src="" alt="" class="opcao-imagem">
               <h3 class="texto-sans-serif texto-opcao">Gato</h3>
             </div>
@@ -93,17 +93,39 @@
               <h3 class="texto-sans-serif texto-opcao">Gato</h3>
             </div>
           </div>
-          
-
         </div>
-    </div>
-
-    </div>
-   </section>
+      </div>
+    </section>
 
 
 
-</main>
+    <!-----------------RESULTADO DO QUIZZ---------------->
+
+    <section class="resultadoQuizz">
+      <div class="topo estilo-background">
+        <h3 class="texto-sans-serif"> BuzzQuizz</h3>
+      </div>
+
+      <div class="container-resultado">
+        <h4 class="titulo-resultado texto-serif"> O quao PotterHead voce e?</h4>
+        <div class="resultado">
+          <h3 class="titulo-acertos estilo-background"> Voce acertou 7 de 8 perguntas! <br> Score: 88% </h3>
+          <div class="descricao-imagem">
+            <div class="descriao">
+              <h3 class="texto-sans-serif texto-resultado">Voce e praticamente um aluno de Hogwarts!</h3>
+              <p class="detalhe-descricao"> Muito bem! Voce realmente esta bem antenado com tudo a respeito de "Harry Potter"</p>
+            </div>
+            <div class="imagem-resultado">
+            <img src="" alt="" class="resultado-imagem"> </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+  </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <script src="assets/Script/login.js"></script>

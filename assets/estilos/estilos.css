@@ -129,7 +129,7 @@ h3 {
 
 .novoQuiz {
     background: white;
-    width: 20%;
+    width: 40%;
     height: 200px;
     border: 2px solid rgba(0,0,0,0.1);
     box-shadow: 2px 2px rgba(0,0,0,0.1);
@@ -343,6 +343,90 @@ h3 {
     font-size: 20px ;
 }
 
+.correto {
+    background: rgba(94, 226, 94, 0.5);
+}
+.errado {
+    background: rgba(236, 59, 59, 0.5);
+}
+
+/**--------------------RESULTADO QUIZZ-------------------*/
+
+
+.resultadoQuizz {
+    display: none;
+}
+
+.container-resultado {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-left: 25%;
+}
+
+.titulo-resultado {
+    font-size: 50px;
+    color: black;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.resultado {
+    width: 100%;
+}
+
+.titulo-acertos {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descricao-imagem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.descricao-imagem {
+    width: 100%;
+}
+
+.descriao {
+    width: 49.6%;
+}
+
+
+.texto-resultado {
+    padding: 0px 10px 25px 10px;
+    color: rgba(0, 0, 0, 0.603);
+    font-size: 20px ;
+}
+
+.detalhe-descricao {
+    padding: 10px 10px 10px 10px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px ;
+}
+
+.imagem-resultado {
+    width: 49.8%;
+}
+
+.resultado-imagem {
+    width: 100%;
+    height: 300px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
 /**--------------------MOBILE-------------------*/
 
 
@@ -395,4 +479,22 @@ h3 {
 
     .opcao {
         width: 100%;
+    }
+
+
+/**--------------------RESULTADO QUIZZ-------------------*/
+    .container-resultado  {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .titulo-resultado {
+        font-size: 30px;
+    }
+    .descriao {
+        width: 100%;
+    }
+    .imagem-resultado {
+        width: 100%;
+    }
 }
